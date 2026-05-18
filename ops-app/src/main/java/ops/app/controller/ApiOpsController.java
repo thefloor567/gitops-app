@@ -12,4 +12,9 @@ public class ApiOpsController {
 	public String OpsTest() {
 		return "Get - /api/ops";
 	}
+	
+	@GetMapping("/health")
+	public String healthCheck() {
+		return "OK\n";
+	}
 }
