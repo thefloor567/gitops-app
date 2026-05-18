@@ -35,7 +35,7 @@ jobs:
 
       - name: 테스트 실행
         working-directory: ops-app
-        run: ./mvnw test -q
+        run: mvn test -q
 
       - name: 이미지 태그 생성
         id: tag
