@@ -8,8 +8,8 @@ on:
     branches: [main]
 
 env:
-  DOCKERHUB_IMAGE: your-dockerhub-username/gitops-app
-  CONFIG_REPO: your-org/gitops-config
+  DOCKERHUB_IMAGE: thefloor123/gitops-app
+  CONFIG_REPO: thefloor567/gitops-config
   CONFIG_REPO_PATH: apps/gitops-app/overlays
 
 permissions:
@@ -79,7 +79,7 @@ jobs:
         run: |
           cd config-repo/${{ env.CONFIG_REPO_PATH }}/dev
           kustomize edit set image \
-            nginx=your-dockerhub-username/gitops-app:$IMAGE_TAG
+            nginx=thefloor123/gitops-app:$IMAGE_TAG
 
       - name: Config Repo 커밋 및 Push
         env:
