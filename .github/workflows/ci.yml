@@ -31,6 +31,7 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
           cache: 'maven'
+          cache-dependency-path: ops-app/pom.xml
 
       - name: 테스트 실행
         run: mvn test -q
