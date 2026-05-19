@@ -16,6 +16,6 @@ public class HomeController {
         model.addAttribute("appName", "ops-app1");
         model.addAttribute("profile", profile);
         model.addAttribute("message", "Hello from ops-app1 (" + profile + ")");
-        return "home";
+        return "home1";
     }
 }
